@@ -9,8 +9,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "rimaf dist && tsc",
-    "prepublish": "npm run build"
+    "build": "rimraf dist && tsc",
+    "prepublish": "npm run build",
+    "rimraf": "./node_modules/rimraf/bin.js"
   },
   "author": "karthik shetty",
   "license": "ISC",
